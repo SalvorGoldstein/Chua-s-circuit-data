@@ -2,7 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-A=np.loadtxt("chaos.txt",skiprows=1,delimiter=";")
+nom_fichier ="courbe EI diode"
+chemin="/home/adam/Documents/study/Chua-s-circuit-data/datas/"
+A=np.loadtxt(chemin+ nom_fichier+ ".txt",skiprows=1,delimiter=";")
 x=A[:,1]
 y=A[:,3]
 z=A[:,5]

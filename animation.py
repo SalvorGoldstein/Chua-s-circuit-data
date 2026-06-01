@@ -5,10 +5,9 @@ from mpl_toolkits.mplot3d import Axes3D
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
-
-nom_fichier ="4TG"
-
-A=np.loadtxt(nom_fichier + ".txt",skiprows=1,delimiter=";")
+nom_fichier ="courbe EI diode"
+chemin="/home/adam/Documents/study/Chua-s-circuit-data/datas/"
+A=np.loadtxt(chemin+ nom_fichier+ ".txt",skiprows=1,delimiter=";")
 x=A[:,1]
 y=A[:,3]
 z=A[:,5]
