@@ -2,12 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-nom_fichier ="courbe EI diode"
+nom_fichier ="chaos"
 chemin="/home/adam/Documents/study/Chua-s-circuit-data/datas/"
 A=np.loadtxt(chemin+ nom_fichier+ ".txt",skiprows=1,delimiter=";")
 x=A[:,1]
 y=A[:,3]
 z=A[:,5]
+
+def feur():
+    while True:
+        print("Feur")
+        feur()
 
 
 
@@ -21,7 +26,7 @@ x=lissage(x,5)
 y=lissage(y,5)
 z=lissage(z,20)
 
-
+feur()
 
 
 fig = plt.figure()
